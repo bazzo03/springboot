@@ -22,7 +22,9 @@ public class BookUtil {
 	}
 	
 	public static List<BookRepository> getAllBooks() {
-		return null;
+		List<BookRepository> books = new ArrayList<>();
+		books.add(getOneBook());
+		return books;
 	}
 	
 	public static BookRepository createBookRepository() {
