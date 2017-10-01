@@ -4,12 +4,12 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
-import com.library.repository.BookRepository;
+import com.library.repository.Book;
 
 public class BookUtil {
 
-	public static BookRepository getOneBook() {
-		BookRepository book = new BookRepository();
+	public static Book getOneBook() {
+		Book book = new Book();
 		List<String> authors = new ArrayList<>();
 		authors.add("Carlos Martinez");
 		authors.add("Pedro Mendoza");
@@ -21,14 +21,14 @@ public class BookUtil {
 		return book;
 	}
 	
-	public static List<BookRepository> getAllBooks() {
-		List<BookRepository> books = new ArrayList<>();
+	public static List<Book> getAllBooks() {
+		List<Book> books = new ArrayList<>();
 		books.add(getOneBook());
 		return books;
 	}
 	
-	public static BookRepository createBookRepository() {
-		BookRepository book = new BookRepository();
+	public static Book createBookRepository() {
+		Book book = new Book();
 		return book;
 	}
 }

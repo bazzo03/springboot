@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.library.repository.BookRepository;
+import com.library.repository.Book;
 import com.library.service.BookService;
 
 @RestController
@@ -22,7 +22,7 @@ public class BookController {
 	}
 
 	@RequestMapping(path="book", method=RequestMethod.GET)
-	public List<BookRepository> getAllBooks() {
+	public List<Book> getAllBooks() {
 		return bookService.getAllBooks();
 	}
 }
