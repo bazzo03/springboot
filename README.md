@@ -20,16 +20,19 @@ Technology	|	Version
 ----------	|	-------
 Java		|	1.8
 Maven		|	3.5.0
-SpringBoot	|	4.1.4
+SpringBoot	|   1.5.7
+JWT			|	0.8.0	
 
 ### Customization
 The application is deployed on port **8090** with the following instruction in **application.properties** 
 `server.port = 8090` 
 
-The application is **secured** with [JWT] (https://jwt.io/), so all the request must be done after successful login.
+The application is **secured** with [JWT](https://jwt.io/), so all the request must be done after successful login.
+
+The application shows all the end-points when requesting to *#{server}::${port}/mappings* - In **application.properties** mappings is set to be shown by `endpoints.mappings.sensitive=false`  
 
 ### Login
-For login purposes, please send a **POST** request to #{server}::${port}/login with the following body:
+For login purposes, please send a **POST** request to *#{server}::${port}/login* with the following body:
 ``` 
 {
 	"username": "admin",
