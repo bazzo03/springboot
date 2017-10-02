@@ -26,4 +26,15 @@ SpringBoot	|	4.1.4
 The application is deployed on port **8090** with the following instruction in **application.properties** 
 `server.port = 8090` 
 
-The application is **secured** with only one user and password, stated in **application.properties**
+The application is **secured** with [JWT] (https://jwt.io/), so all the request must be done after successful login.
+
+### Login
+For login purposes, please send a **POST** request to #{server}::${port}/login with the following body:
+``` 
+{
+	"username": "admin",
+	"password": "password"
+}
+```
+
+The response has a token in the header and this token must be used for next requests, using *Authorization* header.
