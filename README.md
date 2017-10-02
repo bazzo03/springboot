@@ -1,11 +1,11 @@
-#Readme File
+# Readme File
 
-###Objective of the application
+### Objective of the application
 
 The application is a prototype using SpringBoot and its components. 
 
 
-###Run the application
+### Run the application
 
 The application is built as a SpringBoot application and uses Maven.
 
@@ -14,7 +14,7 @@ Deploy the application with Maven Install setting in goals:
 spring-boot:run
 ```  
 
-###Technologies Used
+### Technologies Used
 
 Technology	|	Version
 ----------	|	-------
@@ -22,7 +22,7 @@ Java		|	1.8
 Maven		|	3.5.0
 SpringBoot	|	4.1.4
 
-###Customization
+### Customization
 The application is deployed on port **8090** with the following instruction in **application.properties** 
 `server.port = 8090` 
 
